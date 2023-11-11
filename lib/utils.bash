@@ -69,7 +69,7 @@ install_version() {
     # download_release "$version" "$release_file"
     # tar -xzf "$release_file" -C "$install_path" --strip-components=1 || fail "Could not extract $release_file"
     # rm "$release_file"
-    pip install ansible=="$version"
+    pip3 install ansible=="$version"
 
     # TODO: Asert ansible executable exists.
     local tool_cmd
